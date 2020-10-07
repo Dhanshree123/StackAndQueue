@@ -28,4 +28,8 @@ public class MyStack {
 		return myLinkedList.pop();
 	}
 
+	public boolean isEmpty() {
+		return myLinkedList.head == null ? true : false;
+	}
+
 }
