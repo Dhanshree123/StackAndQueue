@@ -22,4 +22,9 @@ public class MyQueue {
 
 	}
 
+	public INode dequeue() {
+
+		return myLinkedList.pop();
+	}
+
 }
