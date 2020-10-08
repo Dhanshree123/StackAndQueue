@@ -34,8 +34,13 @@ public class MyStackTest {
 		myStack.push(mySecondNode);
 		myStack.push(myThirdNode);
 
+		INode peek = myStack.peek();
 		INode pop = myStack.pop();
-		myStack.printStack();
-		Assert.assertEquals(myThirdNode, pop);
+
+		while (!(myStack.isEmpty())) {
+			peek = myStack.peek();
+			pop = myStack.pop();
+		}
+		Assert.assertEquals(peek, pop);
 	}
 }
